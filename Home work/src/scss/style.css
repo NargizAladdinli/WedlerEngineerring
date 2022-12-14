@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+#cart {
+  width: 100%;
+  height: 795px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#cart .container {
+  max-width: 1100px;
+}
+#cart .container .text {
+  color: #fff;
+  text-align: center;
+}
+#cart .container .text h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  #cart .container .text h1 {
+    font-size: 40px;
+  }
+}
+#cart .container .text h5 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 30px 0px;
+}
+#cart .container .text button {
+  width: 190px;
+  height: 55px;
+  color: #fff;
+  font-weight: 700;
+  background: none;
+  border: 2px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+#cart .container .text button:hover {
+  background: #00853e;
+  border: 2px solid #00853e;
+}
+
+#man {
+  padding: 50px 0px;
+}
+#man .container {
+  max-width: 1100px;
+}
+#man .container .fall {
+  text-align: center;
+}
+#man .container .fall h6 {
+  color: rgb(136, 136, 136);
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+#man .container .fall h2 {
+  color: rgb(66, 66, 66);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+#man .container .fall div {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  border-bottom: 10px solid #00853e;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#man .container .fall p {
+  color: rgb(66, 66, 66);
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding: 30px 0px;
+}
+#man .container .fall button {
+  width: 270px;
+  height: 55px;
+  color: #00853e;
+  font-weight: 700;
+  background: none;
+  border: 2px solid #00853e;
+  transition: 0.2s ease-in-out;
+}
+#man .container .fall button:hover {
+  color: #fff;
+  background: #00853e;
+  border: 2px solid #00853e;
+}
+
+#ground {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  #ground {
+    height: 750px;
+  }
+}
+#ground .container {
+  max-width: 1100px;
+}
+#ground .container .text {
+  text-align: center;
+}
+#ground .container .text h6 {
+  color: rgb(136, 136, 136);
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+#ground .container .text h2 {
+  color: rgb(66, 66, 66);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+#ground .container .text div {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-bottom: 10px solid #00853e;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ground .container .text p {
+  color: #626262;
+  font-size: 20px;
+  line-height: 30px;
+}
+#ground .container .text button {
+  width: 219px;
+  height: 44px;
+  color: #00853e;
+  font-weight: 700;
+  background: none;
+  border: 2px solid #00853e;
+  transition: 0.2s ease-in-out;
+}
+#ground .container .text button:hover {
+  color: #fff;
+  background: #00853e;
+  border: 2px solid #00853e;
+}
+#ground .container .img img {
+  width: 100%;
+  height: 335px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#menu {
+  margin: 30px 0px;
+}
+#menu .container-sm {
+  max-width: 1100px;
+}
+#menu .container-sm .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu .container-sm .all .img img {
+  width: 230px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 768px) {
+  #menu .container-sm .all .line {
+    display: none;
+  }
+}
+#menu .container-sm .all .line ul {
+  display: flex;
+  gap: 30px;
+}
+#menu .container-sm .all .line ul li a {
+  text-decoration: none;
+  color: #B0B0B0;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+#menu .container-sm .all .line ul li a:hover {
+  color: #222222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}/*# sourceMappingURL=style.css.map */
