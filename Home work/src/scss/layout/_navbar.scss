@@ -1,27 +1,20 @@
 #menu{
-    margin: 30px 0px;
+    height: 100px;
+    padding: 30px 0px;
    .container-sm{
     max-width: $max_wid;
     .all{
         @include Flex($j_content:space-between,$a_items:center);
-        .img{
-            img{
-                @include Img($wid:230px,$heit:50px,$o_fit:cover,$o_pos:center);
-            }
-        }
+        .img{ img{ @include Img($wid:230px,$heit:50px,$o_fit:cover,$o_pos:center); } }
         .line{
-            @media (max-width:768px) {
-                display: none;
-            }
+            @media (max-width:768px) { display: none; }
             ul{
                 @include Flex($gap:30px);
                 li{
                     a{
                         @include Text($t_decoration:none,$colrs:$gray_color,$f_size:14px,$f_weight:$weight_700);
                         transition: .2s ease-in-out;
-                        &:hover{
-                            color: $black_color;
-                        }
+                        &:hover{ color: $black_color; }
                     }
                 }
             }
