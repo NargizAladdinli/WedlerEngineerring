@@ -55,6 +55,7 @@
 }
 #ground{
     @include Img($wid:$wid_100,$heit:450px,$flow:hidden);
+    @media (max-width:768px) { height: 700px; }
     .container{
         max-width: $max_wid;
         .text{
@@ -126,18 +127,4 @@
             &:hover{ color: $green_color;}
         }
     }
-}
-#green{
-    @include Text($t_align:center,$ground:$dark_green_color);
-    padding: 50px 0px;
-    h2{ @include Text($colrs:$white_color,$f_size:30px,$f_weight:$weight_700,$l_heit:42px); }
-    div{
-        margin-top: 24px;
-        margin-bottom: 36px;
-        border-bottom: 3px solid $white_color;
-        width: 10%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    i{ @include Text($colrs:$white_color,$f_size:30px); }
 }
