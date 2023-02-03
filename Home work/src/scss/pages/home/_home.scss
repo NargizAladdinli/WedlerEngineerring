@@ -1,6 +1,7 @@
 #cart{
     @include Img($wid:$wid_100,$heit:795px);
     @include Ground($ground_size:cover,$ground_pos:bottom);
+    margin: 100px 0px;
     .container{
         max-width: $max_wid;
         .text{

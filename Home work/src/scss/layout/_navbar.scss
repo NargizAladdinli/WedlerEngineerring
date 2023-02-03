@@ -1,5 +1,6 @@
 #menu{
-    height: 100px;
+    @include Img($wid:100%,$heit:100px,$pos:fixed,$top:0,$left:0,$z_index:10);
+    background-color: #fff;
     padding: 30px 0px;
    .container-sm{
     max-width: $max_wid;
@@ -7,9 +8,32 @@
         @include Flex($j_content:space-between,$a_items:center);
         .img{ img{ @include Img($wid:230px,$heit:50px,$o_fit:cover,$o_pos:center); } }
         .line{
-            @media (max-width:768px) { display: none; }
+            &:active{
+                ul{
+                    transform: translateX(0);
+                }
+            }
+            .burger{
+                display: none;
+                cursor: pointer;
+                div{
+                    background-color: #222;
+                    margin: 5px;
+                    @include Img($wid:25px,$heit:3px);
+                }
+                @media (max-width:768px) {
+                    display: block;
+                    padding: 0px 50px;
+                }
+            }
             ul{
                 @include Flex($gap:30px);
+                @media (max-width:768px) {
+                    @include Img($pos:absolute,$right:0,$top:14vh,$wid:100%);
+                    background-color: #222;
+                    @include Flex($f_direction:column,$a_items:center);
+                    transform: translateX(100%);
+                }
                 li{
                     a{
                         @include Text($t_decoration:none,$colrs:$gray_color,$f_size:14px,$f_weight:$weight_700);
@@ -21,4 +45,14 @@
         }
     }
    }
+}
+@keyframes navLink{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
