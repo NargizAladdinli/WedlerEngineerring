@@ -1,12 +1,6 @@
-
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.link');
-    burger.addEventListener('click', function() {
-        if(burger.classList.contains('link')){
-            burger.remove('link');
-        }
-        else{
-            burger.add('link')
-        }
-    })
-
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu-bur');
+burger.addEventListener('click', function() {
+    burger.classList.toggle('close');
+    menu.classList.toggle('menu-open')
+})

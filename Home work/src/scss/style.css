@@ -292,41 +292,14 @@
   -o-object-position: center;
      object-position: center;
 }
-#menu .container-sm .all .line:active ul {
-  transform: translateX(0);
-}
-#menu .container-sm .all .line .burger {
-  display: none;
-  cursor: pointer;
-}
-#menu .container-sm .all .line .burger div {
-  background-color: #222;
-  margin: 5px;
-  width: 25px;
-  height: 3px;
-}
 @media (max-width: 768px) {
-  #menu .container-sm .all .line .burger {
-    display: block;
-    padding: 0px 50px;
+  #menu .container-sm .all .line {
+    display: none;
   }
 }
 #menu .container-sm .all .line ul {
   display: flex;
   gap: 30px;
-}
-@media (max-width: 768px) {
-  #menu .container-sm .all .line ul {
-    width: 100%;
-    position: absolute;
-    top: 14vh;
-    right: 0;
-    background-color: #222;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transform: translateX(100%);
-  }
 }
 #menu .container-sm .all .line ul li a {
   text-decoration: none;
@@ -338,15 +311,126 @@
 #menu .container-sm .all .line ul li a:hover {
   color: #222222;
 }
-
-@-webkit-keyframes navLink {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+#menu .container-sm .all .mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu .container-sm .all .mobile-menu {
+    display: block;
   }
-  to {
+  #menu .container-sm .all .mobile-menu .open {
+    width: 30px;
+    position: relative;
+    background: white;
+    border: none;
+    margin: 0px 30px;
+  }
+  #menu .container-sm .all .mobile-menu .open::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu .container-sm .all .mobile-menu .open::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu .container-sm .all .mobile-menu .open span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    display: block;
     opacity: 1;
-    transform: translateX(0px);
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu .container-sm .all .mobile-menu .close {
+    width: 30px;
+    position: relative;
+    background: white;
+    border: none;
+    margin: 0px 30px;
+  }
+  #menu .container-sm .all .mobile-menu .close::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menu .container-sm .all .mobile-menu .close::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  #menu .container-sm .all .mobile-menu .close span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu .container-sm .all .mobile-menu #menu-bur {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    padding: 0px 20px;
+    margin-top: 57px;
+  }
+  #menu .container-sm .all .mobile-menu #menu-bur li a {
+    text-decoration: none;
+    color: #222;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 18px 40px 17px 0;
+  }
+  #menu .container-sm .all .mobile-menu .menu-open {
+    color: #222;
+    background: #ededed;
+    width: 100%;
+    height: 359px !important;
+    position: absolute;
+    left: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+    list-style: none;
+    transition: all 0.5s linear;
+    padding: 0px 20px;
+    margin-top: 57px;
+  }
+  #menu .container-sm .all .mobile-menu .menu-open li a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 18px 40px 17px 0;
   }
 }
 
