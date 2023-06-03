@@ -525,4 +525,10 @@
   outline: none;
   list-style: none;
   font-family: "Open Sans", sans-serif;
+}
+*::-moz-selection {
+  background-color: rgb(2, 133, 107);
+}
+*::selection {
+  background-color: rgb(2, 133, 107);
 }/*# sourceMappingURL=style.css.map */
